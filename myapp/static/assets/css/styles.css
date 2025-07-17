@@ -1,0 +1,132 @@
+/* Reset and background */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400..900&family=Lily+Script+One&family=Orbitron:wght@400..900&family=Teko:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cinzel", serif;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #2d2d2e;
+  padding: 1em;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ea135b;
+}
+
+/* Special logo/text left-aligned */
+nav .c {
+  font-size: 1.8em;
+  color: #03c09a;
+  margin-left: 150px;
+  margin-right: 100px;
+  font-family: "Orbitron", sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 15px;
+  background-color: black;
+  border: 1px solid lime;
+  color: lime;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.name {
+  font-size: 10rem;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
+  z-index: 1;
+  position: relative;
+  line-height: 1.1;
+}
+
+.photo-box {
+  position: relative;
+  margin-top: -120px;
+  margin-left: -120px;
+  z-index: 2;
+}
+
+
+/* Intro paragraph */
+.intro {
+  margin: 30px auto;
+  max-width: 600px;
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+/* CTA Button */
+.cta-btn {
+  display: inline-block;
+  background-color: lime;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.cta-btn:hover {
+  background-color: #c8ff00;
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: #2d2d2e;
+  margin-bottom: 20px;
+}
+
+footer span {
+  color: #03c49d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .name {
+    font-size: 3rem;
+  }
+
+  .photo-box {
+    margin-top: -100px;
+  }
+
+  .photo-box img {
+    width: 150px;
+  }
+}

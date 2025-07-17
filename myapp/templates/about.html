@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/about.css' %}" />
+</head>
+
+<body>
+    <nav>
+        <a>
+            <p class="c">KISHOREKUMAR G</p>
+        </a>
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'project' %}">Projects</a>
+        <a href="{% url 'skill' %}">Skills</a>
+        <a href="{% url 'experience' %}">Experience</a>
+        <a href="{% url 'education' %}">Education</a>
+        
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+    <h2 class="n">KISHORE<BR>KUMAR G</h2>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="about-container">
+        <div class="about-left">
+            <h2>About Me</h2>
+            <p>
+                I'm a dedicated and enthusiastic student specializing in<br> Artificial Intelligence and Data Science.
+                I have a deep interest in<br> how data can be transformed into smart solutions using<br> technology.
+                My passion lies in building intelligent systems,<br> analyzing trends, and continuously learning new
+                tools and<br>
+                techniques in the AI world.
+            </p>
+
+            <h3>Education</h3>
+            <p>
+                I am currently pursuing a <strong>B.Tech in Artificial Intelligence and<br> Data Science</strong> at
+                <strong>[KPR
+                    Institute of Engineering and Technology]<br></strong>, expected to graduate in
+                <strong>[2027]</strong>.
+                Through my coursework, I have<br> gained strong foundations in programming, machine learning,<br> and
+                data analytics.
+            </p>
+
+            <h3>Achievements and Recognitions</h3>
+            <ul>
+                <li>Completed a Machine Learning certification from <br>[Platform/Institute Name]</li>
+                <li>Secured top 5% in a national-level Data Science Hackathon</li>
+                <li>Built a COVID-19 tracker web app using real-time APIs</li>
+                <li>Consistently maintained a high academic record</li>
+            </ul>
+
+            <h3>Hobbies & Personal Traits</h3>
+            <p>
+                When I'm not coding or exploring datasets, I enjoy sketching, <br>playing chess, and reading books on
+                psychology and
+                technology.<br>
+                I’m a self-motivated learner, a good team player, and someone<br> who believes in growing by helping
+                others grow.
+            </p>
+
+
+        </div>
+
+    </div>
+    <div class="box">
+        <p>i am more factionate about full-stack</p>
+        <div class="btn-container">
+            <a href="{% url 'contact' %}" class="btn btn-contact">Contact Me</a>
+            <a href="{%static 'image/kishorekumarG.pdf'%}" class="btn btn-resume" target="_blank">My Resume</a>
+        </div>
+    </div>
+    <hr style="color: black;">
+    <footer>© Portfolio Developed by <span>KISHOREKUMAR G</span></footer>
+</body>
+
+</html>

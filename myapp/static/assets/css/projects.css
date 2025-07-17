@@ -1,0 +1,260 @@
+.project-box {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  cursor: pointer;
+  max-width: 800px;
+  transition: background-color 0.3s ease;
+  border: 2px solid #f8df8d;
+}
+
+.project-box:hover {
+    font-size: 22px;
+    background-color: #f8df8d;
+}
+
+
+
+.project-box h2 {
+  color: #000000;
+  font-size: 24px;
+  font-family: "Orbitron", sans-serif;
+  position: relative;
+}
+
+.project-details {
+  display: none;
+  margin-top: 15px;
+  color: #2d2d2e;
+  font-size: 16px;
+  line-height: 1.5;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.project-box.active .project-details {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@400..900&family=Lily+Script+One&family=Orbitron:wght@400..900&family=Teko:wght@300..700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel", serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #2d2d2e;
+  padding: 1em;
+}
+
+nav a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e91e63;
+}
+
+section {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.home img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.skills-list,
+.edu-list,
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li,
+.edu-list li,
+.project-list li {
+  background: #1e1e3f;
+  margin: 0.5em 0;
+  padding: 0.75em;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: #14142f;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin: 0.5em 0;
+  border: none;
+  border-radius: 5px;
+  background: #1e1e3f;
+  color: white;
+}
+
+.contact form button {
+  background: linear-gradient(to right, #e91e63, #9c27b0);
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact form button:hover {
+  opacity: 0.9;
+}
+
+.contact-info p {
+  margin: 1em 0;
+  color: #ccc;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #e91e63;
+}
+
+.social-icons a {
+  color: #ccc;
+  margin: 0 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e91e63;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  color: #ccc;
+}
+
+footer span {
+  color: #00ffcc;
+}
+
+nav .c {
+  font-size: 1.8em;
+  color: #00ffcc;
+  margin-left: 150px;
+  margin-right: 100px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.c {
+  margin-left: 150px;
+}
+
+.h {
+  margin-left: 330px;
+}
+
+.about-box {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin-top: 20px;
+  margin-left: 300px;
+}
+
+.about-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #000000;
+  font-size: 18px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-contact {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-resume {
+  background-color: #28a745;
+  color: white;
+}
+.bo{
+    font-weight: bold;
+    color:#000000;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.code {
+  height: 20px;
+  width: 20px;
+}
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: #2d2d2e;
+  margin-bottom: 20px;
+}
+
+footer span {
+  color: #00ffcc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience</title>
+  <link rel="stylesheet" href="protfolio.css" />
+  <link rel="stylesheet" href="experience.css" />
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/css/experience.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/protfolio.css' %}" />
+</head>
+
+<body>
+  <nav>
+    <a>
+      <p class="c">Kishorekumar G</p>
+    </a>
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'project' %}">Projects</a>
+    <a href="{% url 'skill' %}">Skills</a>
+    <a href="{% url 'experience' %}">Experience</a>
+    <a href="{% url 'education' %}">Education</a>
+    
+    <a href="{% url 'contact' %}">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="exp-container">
+      <div class="exp-item">
+        <button class="exp-title">Intern - Cloud Computing @ Spotknack</button>
+        <div class="exp-content">
+          <p>Completed an internship at Spotknack, iBevy Forte Private Limited from <strong>08/01/2025 to
+              22/01/2025</strong>.</p>
+          <p><strong>Intern Certificate:</strong>
+            <a href="static 'images/Kishore Kumar AIDS.pdf'" target="_blank" class="cert-link">View Certificate</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <button class="exp-title">Intern - Full Stack @ Pinesphere</button>
+        <div class="exp-content">
+          <p>Ongoing internship at Pinesphere from <strong>23 June 2025 to 11 July 2025</strong>.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <button class="exp-title">Intern - App Development @ InterEzy</button>
+        <div class="exp-content">
+          <p>Ongoing internship at InterEzy from <strong>March 2025 to April 2025</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+  <footer>© Portfolio Developed by <span>KISHOREKUMAR G</span></footer>
+
+  <script src="{%static 'assets/js/experience.js'%}"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kishorekumar G - Home</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}" />
+
+</head>
+
+<body>
+  <nav>
+    <a href="portfolio.html">
+      <p class="c">KISHOREKUMAR G</p>
+    </a>
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'project' %}">Projects</a>
+    <a href="{% url 'skill' %}">Skills</a>
+    <a href="{% url 'experience' %}">Experience</a>
+    <a href="{% url 'education' %}">Education</a>
+    
+    <a href="{% url 'contact' %}">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="badge">✔ AVAILABLE FOR WORK</div>
+    <h1 class="name">KISHORE<br>KUMAR</h1>
+
+    <div class="photo-box">
+      <img src="{% static 'image/kishore.png'%}" alt="Kishore Profile">
+    </div>
+
+    <p class="intro">A passionate college student learning web development, programming, and design to build real-world
+      solutions.</p>
+
+    <a href="{% url 'contact' %}" class="cta-btn">↳ Contact Me</a>
+  </section>
+  <hr>
+  <footer>© Portfolio Developed by <span>KISHOREKUMAR G</span></footer>
+</body>
+
+</html>

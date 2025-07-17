@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/skill.css' %}" />
+</head>
+
+<body>
+    <nav>
+        <a>
+            <p class="c">Kishorekumar G</p>
+        </a>
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'project' %}">Projects</a>
+        <a href="{% url 'skill' %}">Skills</a>
+        <a href="{% url 'experience' %}">Experience</a>
+        <a href="{% url 'education' %}">Education</a>
+        
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+
+    <div class="skills-container">
+        <div class="skills-left">
+            <h1>Skills</h1>
+
+            <div class="skill-item">
+                <h2>Python</h2>
+                <p>↣&nbsp;&nbsp;I have a strong grasp of Python, especially in data analysis, automation, and machine
+                    learning. I’ve worked with libraries like Pandas, NumPy, and Scikit-learn. I earned a Python
+                    Programming Certificate from Coursera.<br><a href="{%static 'image/Coursera P95HKAMYWF6R PYTHON.pdf'%}" 
+                        class="ce" target="_blank" style="color: aqua; font-size: 22px;">↣&nbsp;&nbsp; Certificate </a></p>
+
+            </div>
+
+            <div class="skill-item">
+                <h2>JavaScript</h2>
+                <p>↣&nbsp;&nbsp;I use JavaScript for interactive web development. I’ve built dynamic interfaces using
+                    DOM manipulation and asynchronous requests. Completed JavaScript Essentials course on Udemy.<br><a
+                        href="{%static 'image/javascript.pdf'%}"  class="ce" target="_blank" style="color: aqua; font-size: 22px;"> ↣ &nbsp;&nbsp;Certificate </a></p>
+
+            </div>
+
+            <div class="skill-item">
+                <h2>HTML, CSS, Bootstrap</h2>
+                <p>↣&nbsp;&nbsp;I build responsive, visually appealing websites using HTML5, CSS3, and Bootstrap.
+                    Learned frontend basics from freeCodeCamp.<br> <a href="{%static 'image/html,css.pdf'%}" 
+                        class="ce" target="_blank" style="color: aqua; font-size: 22px;">↣&nbsp;&nbsp;Certificate</a></p>
+            </div>
+
+            <div class="skill-item">
+                <h2>Java</h2>
+                <p>↣&nbsp;&nbsp;I’ve built object-oriented programs and desktop apps. Comfortable with multithreading,
+                    file handling, and core OOP concepts.<br> <a href="{%static 'image/java_basic certificate.pdf'%}"
+                    class="ce" target="_blank" style="color: aqua; font-size: 22px;">↣&nbsp;&nbsp;Certificate</a></p>
+            </div>
+
+            <div class="skill-item">
+                <h2>C, C++</h2>
+                <p>↣&nbsp;&nbsp;I started with C and C++, gaining strong fundamentals in logic, memory handling, and
+                    data structures. Practiced on CodeChef & HackerRank.<br> <a href="{%static 'image/c++.pdf'%}" 
+                        class="ce" target="_blank" style="color: aqua; font-size: 22px;">↣&nbsp;&nbsp;Certificate</a></p>
+            </div>
+
+            <div class="skill-item">
+                <h2>Git & GitHub</h2>
+                <p>↣&nbsp;&nbsp;I use Git for version control and GitHub to manage code and collaborate. Familiar with
+                    commits, branches, and merge handling. Completed Git training on LinkedIn Learning.</p>
+            </div>
+        </div>
+
+        <div class="skills-right">
+            <img src="{% static 'image/kishoreg.jpg' %}" alt="Profile Image">
+        </div>
+    </div>
+
+    <script src="{% static 'assets/js/skills.js' %}"></script>
+    <hr>
+    <footer>© Portfolio Developed by <span>KISHOREKUMAR G</span></footer>
+</body>
+
+</html>

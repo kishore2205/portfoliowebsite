@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'assets/css/contact.css' %}" />
+</head>
+
+<body>
+    <nav>
+        <a>
+            <p class="c">Kishorekumar G</p>
+        </a>
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'project' %}">Projects</a>
+        <a href="{% url 'skill' %}">Skills</a>
+        <a href="{% url 'experience' %}">Experience</a>
+        <a href="{% url 'education' %}">Education</a>
+        
+        <a href="{% url 'contact' %}">Contact</a>
+    </nav>
+
+    <div class="contact-container">
+        <h2>CONTACT WITH ME</h2>
+        <p>If you have any questions or concerns, please don't hesitate to contact me. I am open to any work
+            opportunities
+            that align with my skills and interests.</p>
+
+        <div class="contact-wrapper">
+
+            <form id="contact-form" class="contact-form" method="POST" enctype="multipart/form-data" action="">
+                {% csrf_token %}
+                <label>Your Name :</label>
+                <input type="text" name="user_name" placeholder="Enter your name" required>
+
+                <label>Your Email :</label>
+                <input type="email" name="user_email" placeholder="Enter your email" required>
+
+                <label>Phone Number :</label>
+                <input type="tel" name="user_phone" placeholder="Enter your phone number" required>
+
+                <label>Category :</label>
+                <select name="category" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Job Opportunity">Job Opportunity</option>
+                    <option value="Freelance Work">Freelance Work</option>
+                    <option value="Collaboration">Collaboration</option>
+                    <option value="Other">Other</option>
+                </select>
+
+
+                <label>Date of Birth :</label>
+                <input type="date" id="dob" name="dob" onchange="calculateAge()" required>
+
+                <label>Age :</label>
+                <input type="text" id="age" name="age" placeholder="Your age will appear here" readonly>
+
+                <label>Gender :</label>
+                <select name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label>Your Message :</label>
+                <textarea name="message" rows="5" placeholder="Write your message"></textarea>
+
+                <button type="submit">SUBMIT <i class="fas fa-paper-plane"></i></button>
+            </form>
+
+
+            <div class="contact-info">
+                <p><a href="mailto:kishorekumargmsk@gmail.com" class="mail"><i class="fas fa-envelope"></i>
+                        kishorekumargmsk@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Krishnagiri(Dt),<br>
+                    Pochampalli(tk),<br>
+                    Barur (vill, post)<br>
+                    635201</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kishore-kumar-2754aa290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/kishore2205" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer>© Portfolio Developed by <span>KISHOREKUMAR G</span></footer>
+    </div>
+
+    <!-- EmailJS SDK -->
+    <!-- EmailJS -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <!-- Initialize EmailJS & send form (in contact.js) -->
+    <script src="{%static 'assets/js/protfolio.js'%}"></script>
+</body>
+
+</html>

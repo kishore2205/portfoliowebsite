@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/css/projects.css'%}">
+</head>
+
+<body>
+  <nav>
+    <a>
+      <p class="c">Kishorekumar G</p>
+    </a>
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'project' %}">Projects</a>
+    <a href="{% url 'skill' %}">Skills</a>
+    <a href="{% url 'experience' %}">Experience</a>
+    <a href="{% url 'education' %}">Education</a>
+    
+    <a href="{% url 'contact' %}">Contact</a>
+  </nav>
+  <div class="project-box" onclick="toggleProject(this)">
+    <h2>Portfolio Website</h2>
+    <div class="project-details">
+      <p>
+      <h2 class="bo">🛠 Tools & Technologies Used:</h2><br>
+      <ul>
+        <li>HTML5, CSS3, JavaScript – for designing the structure, styling, and interactive behaviors.</li>
+        <li>Responsive Design – implemented with CSS Flexbox/Grid and media queries to ensure mobile-friendly layout.
+        </li>
+        <li>External Libraries – Font Awesome for icons, Google Fonts for typography.</li>
+      </ul>
+
+      <br><br>
+      <h2 class="bo">💡 Project Overview:</h2>
+
+      <ul>
+        <li>This portfolio website showcases a student's personal and academic journey, featuring sections like About
+          Me, Skills, Experience, Projects, and Contact.</li>
+        <li>It includes a professional layout with a clean UI, a dynamic skills section, and interactive navigation
+          across multiple HTML pages.</li>
+      </ul>
+
+      <br>
+
+      <h2 class="bo">📂 Features:</h2>
+
+      <ul>
+        <li>Dynamic content reveal (e.g., skills expand on click).</li>
+        <li>Resume download and direct contact options.</li>
+        <li>
+          Organized page navigation and scroll animations for smooth UX.
+        </li>
+      </ul>
+
+
+
+
+      <br>
+      <h2 class="bo">🚀 Purpose & Outcome:</h2><br>
+
+      <ul>
+        <li>
+          The goal of this portfolio is to highlight technical strengths, certifications, and projects to potential
+          recruiters or collaborators.
+        <li>It’s fully customizable, easy to maintain, and serves as a live demonstration of front-end development
+          skills.<br></li>
+        </li>
+      </ul>
+
+      </p>
+    </div>
+  </div>
+
+  <div class="project-box" onclick="toggleProject(this)">
+    <h2>Cloud-based-file-sharing-system</h2>
+    <div class="project-details">
+      <p>
+      <ul>
+        <h2>Tools and Technologies Used:</h2>
+        <ul>
+          <li>A Cloud-Based File Sharing System enables users to upload, store, and share files securely via the
+            internet.</li>
+          <li>It ensures file access from any device and location using scalable cloud infrastructure.</li>
+        </ul>
+        </li>
+
+        <h2>Tools and Technologies Used:</h2>
+        <ul>
+          <li><strong>Frontend:</strong> HTML, CSS, JavaScript (with optional Bootstrap or Tailwind CSS)</li>
+          <li><strong>Backend:</strong> Python with Flask Framework</li>
+          <li><strong>Database:</strong> SQLite or AWS RDS (MySQL/PostgreSQL)</li>
+          <li><strong>Cloud Storage:</strong> AWS S3 (Simple Storage Service)</li>
+          <li><strong>Authentication:</strong> Flask-Login or JWT (optionally AWS Cognito)</li>
+        </ul>
+
+
+        <h2>How the Project Works:</h2>
+        <ul>
+          <li><strong>User Registration & Login:</strong> Users register or log in. Credentials are securely validated
+            using hashing.</li>
+          <li><strong>File Uploading:</strong> Logged-in users upload files through a web form, stored in AWS S3. File
+            metadata is stored in the database.</li>
+          <li><strong>File Sharing:</strong> The system generates a unique shareable link with access permissions.</li>
+          <li><strong>Access & Download:</strong> The link allows file download or preview after verifying access
+            permissions.</li>
+        </ul>
+
+      </ul>
+      </p>
+    </div>
+  </div>
+
+  <div class="project-box" onclick="toggleProject(this)">
+    <h2>Student Attendance System</h2>
+    <div class="project-details">
+      <p>A mini attendance tracker using Python and SQLite. Allows faculty to mark and manage student attendance with a
+        simple CLI interface.</p>
+    </div>
+  </div>
+
+  <div class="project-box" onclick="toggleProject(this)">
+    <h2>Weather Forecast App</h2>
+    <div class="project-details">
+      <p>Built using OpenWeather API and JavaScript, this app allows users to check real-time weather conditions of any
+        city with a simple user interface.</p>
+    </div>
+  </div>
+
+  <script src="{%static 'assets/js/projects.js'%}"></script>
+  <br><br><br><br><br><br><br><br>
+  <hr>
+  <footer>© Portfolio Developed by <span>KISHOREKUMAR G</span></footer>
+</body>
+
+</html>

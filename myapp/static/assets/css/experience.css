@@ -1,0 +1,49 @@
+/* Accordion container */
+.exp-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+/* Experience title buttons */
+.exp-title {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: left;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.exp-title:hover {
+  background-color: #555;
+}
+
+/* Content box hidden by default */
+.exp-content {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-left: 4px solid #333;
+  display: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Certificate link */
+.cert-link {
+  color: #f85d0a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cert-link:hover {
+  text-decoration: underline;
+}

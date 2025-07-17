@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education</title>
+  <link rel="stylesheet" href="protfolio.css" />
+  <link rel="stylesheet" href="education.css" />
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'assets/css/education.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/protfolio.css' %}" />
+</head>
+
+<body>
+  <nav>
+    <a>
+      <p class="c">Kishorekumar G</p>
+    </a>
+    <a href="{% url 'index' %}">Home</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'project' %}">Projects</a>
+    <a href="{% url 'skill' %}">Skills</a>
+    <a href="{% url 'experience' %}">Experience</a>
+    <a href="{% url 'education' %}">Education</a>
+    
+    <a href="{% url 'contact' %}">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Education</h2>
+    <!-- Container for collapsible education items -->
+    <div class="edu-container">
+      <div class="edu-item">
+        <button class="edu-title">10th</button>
+        <div class="edu-content">
+          <p>Sri Ramakrishna Higher Sec School</p>
+          <p>Year: 2021</p>
+          <p>Location: Arasampatti</p>
+          <button class="cert-btn" onclick="alert('10th Certificate not uploaded yet.')">View Certificate</button>
+        </div>
+      </div>
+      <div class="edu-item">
+        <button class="edu-title">12th</button>
+        <div class="edu-content">
+          <p>Government Higher Sec School</p>
+          <p>Year: 2023</p>
+          <p>Location: Barur</p>
+          <button class="cert-btn" onclick="alert('12th Certificate not uploaded yet.')">View Certificate</button>
+        </div>
+      </div>
+      <div class="edu-item">
+        <button class="edu-title">B-Tech - AI&DS</button>
+        <div class="edu-content">
+          <p>KPR Institute of Engineering and Technology</p>
+          <p>Duration: 2023 – Present (3rd year ongoing)</p>
+          <p>Location: Coimbatore</p>
+          <button class="cert-btn" onclick="alert('B-Tech Certificate will be available after completion.')">View
+            Certificate</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+  <footer>© Portfolio Developed by <span>KISHOREKUMAR G</span></footer>
+
+  <script src="{%static 'assets/js/education.js'%}"></script>
+</body>
+
+</html>
