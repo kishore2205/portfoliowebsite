@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', True)
 
-ALLOWED_HOSTS = ['51.20.53.33', 'portfoliowebsite-5mv9.onrender.com']
+ALLOWED_HOSTS = ['portfoliowebsite-5mv9.onrender.com']
 
 
 
